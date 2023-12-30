@@ -4,15 +4,13 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "seed": "node -r dotenv/config ./scripts/seed.js"
+    "seed": "node -r dotenv/config ./scripts/seed.js",
+    "pre-commit": "npm run lint && npm test"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "echo '[Husky] pre-commit'"
     }
-  },
-  "lint-staged": {
-    "*": "prettier --write"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
