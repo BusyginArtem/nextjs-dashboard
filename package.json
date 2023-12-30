@@ -13,9 +13,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "prettier --write",
-      "git add"
-    ]
+      "prettier --write"    ]
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
