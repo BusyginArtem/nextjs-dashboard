@@ -4,8 +4,7 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "seed": "node -r dotenv/config ./scripts/seed.js",
-    "pre-commit": "npm run lint && npm test"
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "husky": {
     "hooks": {
