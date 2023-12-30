@@ -9,8 +9,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo '[Husky] pre-commit'"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*": "prettier --write"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -38,6 +41,7 @@
     "dotenv": "^16.3.1",
     "eslint-config-next": "14.0.1",
     "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.0.3"
   },
   "engines": {
