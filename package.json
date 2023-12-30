@@ -13,7 +13,6 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "tslint",
       "prettier --write",
       "git add"
     ]
